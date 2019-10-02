@@ -34,7 +34,7 @@ class SignUpForm extends React.Component {
                     <label htmlFor="password">Password</label>
                     <input type="password" id="password"  name="password" value={password} onChange={this.changeInput} />
                 </div>
-                <button type="submit" onClick={this.handleSubmit} >Submit</button>
+                <button onClick={this.handleSubmit} type="submit" >Submit</button>
             </div>
         )
     }

@@ -1,23 +1,23 @@
 import React from 'react';
-import './TwitterFeed.css';
+import './TwitterFeed.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 function TwitterFeed() {
   return (
-    <div>
-    <div>
-      <FontAwesomeIcon icon="faTwitter"/>
-      Twitter Feed <small>#France</small>
-    </div>
+    <div className="card-downLeft">
+    <h1>
+      <FontAwesomeIcon icon={faTwitter} color="#41b3b7" />
+      &nbsp;&nbsp;&nbsp;Twitter Feed <small>#France</small>
+    </h1>
     <ul>
       <li>
-        <div>iconhere</div>
-        <div>Don't forget your sunscreen tomorrow!!</div>
+      <FontAwesomeIcon icon={faTwitter} color="#41b3b7" />
+      &nbsp;&nbsp;&nbsp;Don't forget your sunscreen tomorrow!!
       </li>
       <li>
-        <div>iconhere</div>
-        <div>Amazing weather in Paris!!</div>
+      <FontAwesomeIcon icon={faTwitter} color="#41b3b7" />
+      &nbsp;&nbsp;&nbsp;Amazing weather in Paris!!
       </li>
     </ul>
     </div>

@@ -1,0 +1,23 @@
+.card-downRight{
+    flex: 3;
+    // margin-right: 1rem;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+    li{
+        list-style-type: none;
+        font-size: 1.25rem;
+        text-align: center;
+        h1{
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+        div:first-of-type{
+            margin: 1rem 0;
+        }
+        small{
+            font-size: 0.75rem;
+        }
+    }
+}

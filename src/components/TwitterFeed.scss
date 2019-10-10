@@ -1,0 +1,22 @@
+.card-downLeft{
+    flex: 1.5;
+    border-right: 2px solid #ddd;
+    padding: 0 1rem;
+    h1{
+        font-size: 1.25rem;
+        small{
+            font-size: 0.75rem;
+            color: rgb(65, 162, 253)
+        }
+    }
+    ul{
+        margin-top: 3rem;
+        list-style-type: none;
+        list-style-position: outside;
+        text-indent:-40px;
+        color: #888;
+        li{
+            margin: 2rem 0;
+        }
+    }
+}

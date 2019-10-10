@@ -7,21 +7,23 @@ import WeatherForecast from './components/WeatherForecast';
 import CityWeather from './components/CityWeather';
 import SignUpForm from './components/SignUpForm';
 
-function App() {
-  return (
-    <div>
-      <Header/>
-      <div className="card">
-        <CityWeather/>
-        <div>
-          <TwitterFeed/>
-          <WeatherForecast/>
+
+
+class App extends React.Component{
+  render(){
+    return (
+      <div>
+        <Header/>
+        <div className="card">
+          <CityWeather />
+          <div className="card-down">
+            <TwitterFeed/>
+            <WeatherForecast/>
+          </div>
         </div>
       </div>
-    <SignUpForm />
-    </div>
-    
-  );
+    );
+  }
 }
 
 export default App;

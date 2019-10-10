@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './WeatherForecast.css';
+import './WeatherForecast.scss';
 import  {FontAwesomeIcon}  from '@fortawesome/react-fontawesome';
 import  {faCloudRain,
          faSun,
@@ -8,48 +8,48 @@ import  {faCloudRain,
          faPooStorm,
          } from '@fortawesome/free-solid-svg-icons';
 
+
 function WeatherForecast() {
   const weatherdata = 
     [
       {
           weekday: "MON",
-          weatherPic:<FontAwesomeIcon icon={faCloudRain}/>,
-          temperature: "9",
+          weatherPic:<FontAwesomeIcon icon={faCloudRain} size="4x" color="rgb(117, 177, 247)" />,
+          temperature: "9°",
           weather: "RAINING"
       },{
           weekday: "TUE",
-          weatherPic:<FontAwesomeIcon icon={faSun}/>,
-          temperature: "15",
+          weatherPic:<FontAwesomeIcon icon={faSun} size="4x" color="rgb(235, 220, 8)" />,
+          temperature: "15°",
           weather: "SUNNY"
       },{
           weekday: "WED",
-          weatherPic:<FontAwesomeIcon icon={faCloud}/>,
-          temperature: "11",
+          weatherPic:<FontAwesomeIcon icon={faCloud} size="4x" color="rgb(52, 98, 150)" />,
+          temperature: "11°",
           weather: "CLOUDY"
       },{
           weekday: "THU",
-          weatherPic:<FontAwesomeIcon icon={faPooStorm}/>,
-          temperature: "7",
+          weatherPic:<FontAwesomeIcon icon={faPooStorm} size="4x" />,
+          temperature: "7°",
           weather: "STORM"
       },{
           weekday: "FRI",
-          weatherPic:<FontAwesomeIcon icon={faSun}/>,
-          temperature: "18",
+          weatherPic:<FontAwesomeIcon icon={faSun} size="4x" color="rgb(235, 220, 8)" />,
+          temperature: "18°",
           weather: "SUNNY"
       }
   ]
   
   return (
-    <ul>
+    <ul className="card-downRight">
       {weatherdata.map((item)=>{
         return (
-          <div>
-          <div className="haha">{item.weekday}</div>
-          <div className="haha">{item.weatherPic}</div>
-          <div className="haha">{item.temperature}</div>
-          <div className="haha">{item.weather}</div>
-          </div>
-
+          <li>
+          <h1>{item.weekday}</h1>
+          <div>{item.weatherPic}</div>
+          <div>{item.temperature}</div>
+          <small >{item.weather}</small>
+          </li>
         )
       })}
     </ul>
@@ -59,3 +59,6 @@ function WeatherForecast() {
   );
 }
 export default WeatherForecast;
+
+
+
